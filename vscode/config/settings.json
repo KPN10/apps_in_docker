@@ -1,0 +1,54 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "extensions.autoUpdate": false,
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai Vibrant",
+
+    "files.autoSave": "onFocusChange",
+
+    "editor.rulers": [ 80, 120 ],
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.wordBasedSuggestions": "off",
+    "editor.quickSuggestionsDelay": 10,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.hover.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.parameterHints.enabled": false,
+
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.autoReplies": {},
+    
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "git.confirmSync": false,
+    "gitlens.codeLens.recentChange.command": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.scopes": [],
+    "gitlens.codeLens.authors.command": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    
+    "cmake.configureOnOpen": true,
+
+    "C_Cpp.autocomplete": "disabled",
+    "python.analysis.extraPaths": [],
+    "python.autoComplete.extraPaths": [
+    ],
+
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "javascript.suggest.enabled": false
+}

@@ -1,0 +1,231 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+pageup",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+pagedown",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-workbench.action.terminal.scrollUp",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-workbench.action.terminal.scrollDown",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+pagedown",
+        "command": "-workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "workbench.action.terminal.scrollToBottom",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+end",
+        "command": "-workbench.action.terminal.scrollToBottom",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "workbench.action.terminal.scrollToTop",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+home",
+        "command": "-workbench.action.terminal.scrollToTop",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+pageup",
+        "command": "-workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "alt+f4",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "alt+f alt+b",
+        "command": "workbench.action.focusStatusBar"
+    },
+    {
+        "key": "ctrl+g ctrl+g",
+        "command": "git-graph.view"
+    },
+    {
+        "key": "alt+s alt+a",
+        "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "ctrl+g t",
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "ctrl+r ctrl+w",
+        "command": "editor.action.toggleRenderWhitespace"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "breadcrumbs.toggle"
+    },
+    {
+        "key": "ctrl+e ctrl+g",
+        "command": "workbench.action.editorLayoutTwoByTwoGrid"
+    },
+    {
+        "key": "ctrl+t ctrl+s",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "ctrl+t ctrl+a",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+o ctrl+w",
+        "command": "workbench.action.openView"
+    },
+    {
+        "key": "ctrl+o ctrl+l",
+        "command": "outline.toggleVisibility"
+    },
+    {
+        "key": "ctrl+o ctrl+f",
+        "command": "outline.followCursor"
+    },
+    {
+        "key": "ctrl+o ctrl+f",
+        "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+o ctrl+c",
+        "command": "outline.collapse"
+    },
+    {
+        "key": "ctrl+e ctrl+f",
+        "command": "workbench.explorer.fileView.focus"
+    },
+    {
+        "key": "ctrl+e ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+e ctrl+m",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+e ctrl+r",
+        "command": "workbench.files.action.refreshFilesExplorer"
+    },
+    {
+        "key": "ctrl+e ctrl+c",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+e ctrl+e",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+e ctrl+o",
+        "command": "workbench.explorer.openEditorsView.toggleVisibility"
+    },
+    {
+        "key": "ctrl+o w",
+        "command": "workbench.action.openWorkspace"
+    },
+    {
+        "key": "ctrl+shift+g s",
+        "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+shift+g b",
+        "command": "gitlens.views.branches.focus"
+    },
+    {
+        "key": "ctrl+shift+g r",
+        "command": "gitlens.views.remotes.focus"
+    },
+    {
+        "key": "alt+s alt+up",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "ctrl+t ctrl+c",
+        "command": "editor.action.toggleColumnSelection"
+    },
+    {
+        "key": "f12",
+        "command": "goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "f12",
+        "command": "-goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "shift+f12",
+        "command": "goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "f11",
+        "command": "-workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "ctrl+r ctrl+t",
+        "command": "C_Cpp.BuildAndRunFile"
+    },
+    {
+        "key": "ctrl+r ctrl+p",
+        "command": "python.execInTerminal-icon"
+    }
+]
