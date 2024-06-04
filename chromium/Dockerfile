@@ -1,13 +1,21 @@
 FROM debian:latest
 
-ENV http_proxy http://192.168.1.1:3128
-ENV https_proxy http://192.168.1.1:3128
+ARG UID
+ARG GID
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV USERNAME=chromium
 
-RUN apt update && apt install -y chromium
+RUN apt update && apt upgrade -y
+RUN apt install -y sudo chromium
+RUN addgroup -gid $GID nonroot
+RUN useradd -m -s /bin/bash $USERNAME && \
+    usermod -aG sudo $USERNAME
+USER $USERNAME
+WORKDIR /home/$USERNAME
 
 ENV DISPLAY=:0
 
-CMD ["/bin/bash"]
-#CMD ["chromium", " --no-sandbox", "--disable-gpu-sandbox", "--proxy-server=http://192.168.1.1:56120"]
+#CMD ["/bin/bash"]
+#CMD ["chromium", " --no-sandbox", "--disable-gpu", "--proxy-server=http://<ip>:<port>"]
+CMD ["chromium", "--proxy-server=http://<ip>:<port>"]
