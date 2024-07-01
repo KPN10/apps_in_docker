@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutomatedInstallation langpack="eng">
+<com.st.microexplorer.install.MXHTMLHelloPanel id="readme"/>
+<com.st.microexplorer.install.MXLicencePanel id="licence.panel"/>
+<com.st.microexplorer.install.MXTargetPanel id="target.panel">
+<installpath>/home/developer/STMicroelectronics/STM32Cube/STM32CubeMX</installpath>
+</com.st.microexplorer.install.MXTargetPanel>
+<com.st.microexplorer.install.MXShortcutPanel id="shortcut.panel"/>
+<com.st.microexplorer.install.MXInstallPanel id="install.panel"/>
+<com.st.microexplorer.install.MXFinishPanel id="finish.panel"/>
+</AutomatedInstallation>
